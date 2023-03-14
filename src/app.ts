@@ -1,7 +1,10 @@
 import express from "express";
+import mongoose from "mongoose";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
+
+mongoose.connect("mongodb://locahost/firstapi");
 
 app.use(express.json());
 
