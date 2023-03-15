@@ -1,6 +1,6 @@
 
 # API de cadastro de Usuários
-API básica de cadastro de usuários com Typescript, Nodejs e MongoDB
+API de cadastro de usuários com Typescript, Nodejs e MongoDB
 
 
 ## Endpoints
