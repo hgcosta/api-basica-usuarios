@@ -15,19 +15,19 @@ class UserController {
     }
   }
 
-  async findName(request: Request, response: Response): Promise<Response> {
+  async findEmail(request: Request, response: Response): Promise<Response> {
     try {
-      const { name } = request.body;
-      const userName = await User.findOne({ name });
+      const { Email } = request.body;
+      const userEmail = await User.findOne({ Email });
 
-      if (!userName) {
+      if (!userEmail) {
         return response.status(400).json({
           error: "Opss",
           message: "Usuário não encontrado",
         });
       }
 
-      return response.json(userName);
+      return response.json(userEmail);
     } catch (error) {
       return response.status(500).json({
         error:
